@@ -8,12 +8,15 @@ Churn rate is one of the most important metrics that a company with recurring pa
 
 The objective was to build a classifier to determine if a customer would ‘soon’ leave SyriaTel, and to determine if there were predictable patterns.The three objectives were:
 
-- Determine if a customer would ‘soon’ leave SyriaTel
-- Determine if there were predictable patterns
-- Determine features of the dataset are primary determinants of customer churn and to what extent
+- To identify ways that can reduce customer churning and how can SyriaTel implement cost-effective solutions
+- To create predictive,supervised models that can predict churn
+- To Determine features of the dataset are primary determinants of customer churn and to what extent
+  image.png
 
 #### Data Understanding
 
+- This project utilises data from [SyriaTel Customer Churn](link) dataset from Kaggle.
+- The target variable in this dataset that we aimed to predict was identified as the churn column.
 - The data is divided into train, test, and validation datasets. Each row of the train dataset represents a customer and each column represents a feature.
 - The data set contains 3333 rows and 21 columns with both categorical and numerical features
 
@@ -26,14 +29,26 @@ The objective was to build a classifier to determine if a customer would ‘soon
 
 #### Data Modeling
 
-- Logistic Regression was used to predict churn
-- Decision Tree Classifier was used to predict churn
-- Random Forest Classifier was used to predict churn
+The data seemed to be imbalance and SMOTE before scaling
 
-#### Data Evaluation
+- Logistic Regression was used to predict churn gave a recall of 72%
+- Decision Tree Classifier was used to predict churn gave a recall of 74%
+- Random Forest Classifier was used to predict churn with a 72% recall
+- fined tuned Random Forest gave a 71% recall and then it became the best model in the churn prediction
 
-- Logistic Regression achieved an accuracy of 86%
-- Decision Tree Classifier achieved an accuracy of 95%
-- Random Forest Classifier achieved an accuracy of 94%
+#### Evaluation
 
-#### Conclusion
+All the objectives that were set were all met.Features such as customer servive calls,international plan and total day charge were among the major determinants of customers churning.
+
+- Customers who churned were usually customers who churned frequently.
+- to reduce the customer churning rate,Syria tel should target on:
+  - addressing customer issues in a timely and effective manner
+  - increasing customer loyalty by giving incentive,discounts and promotion to their loyal customer
+  - increasing customer satisfaction by offering discounts and promotions
+- Recall was our classification metric since a model with high recall (i.e., identifying most of the customers who are likely to churn) is prefered
+
+#### Conclusion and Recomendation
+
+- SyriaTel should target on addressing customer issues in a timely and effective manner, so as to reduce customer churn and improve overall customer satisfaction.
+- Given that over 42% of international plan holders churn, further investigation into retention efforts for these customers might be a worthwhile effort.
+- Further investigation should be devoted to looking into the other characteristics of these customers to find out why there was a need to make this many calls to customer service and how the company could better assist these customers.
