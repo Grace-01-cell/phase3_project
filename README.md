@@ -1,5 +1,6 @@
 # phase3_project
 
+
 ##### Business Overview
 
 Churn rate is one of the most important metrics that a company with recurring payment customers can calculate, and is most often expressed as a percentage of subscribers that have canceled their recurring payment plans. The higher the churn rate, the more customers stop buying from the business.
