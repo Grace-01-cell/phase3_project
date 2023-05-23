@@ -5,7 +5,12 @@
 
 Churn rate is one of the most important metrics that a company with recurring payment customers can calculate, and is most often expressed as a percentage of subscribers that have canceled their recurring payment plans. The higher the churn rate, the more customers stop buying from the business.
 
-#### Business Problem
+#### Business and Data understanding
+- This project utilises data from [SyriaTel Customer Churn](link) dataset from Kaggle.
+- The target variable in this dataset that we aimed to predict was identified as the churn column.
+- The data is divided into train, test, and validation datasets. Each row of the train dataset represents a customer and each column represents a feature.
+- The data set contains 3333 rows and 21 columns with both categorical and numerical features
+
 
 The objective was to build a classifier to determine if a customer would ‘soon’ leave SyriaTel, and to determine if there were predictable patterns.The three objectives were:
 
@@ -14,21 +19,7 @@ The objective was to build a classifier to determine if a customer would ‘soon
 - To Determine features of the dataset are primary determinants of customer churn and to what extent
   image.png
 
-#### Data Understanding
-
-- This project utilises data from [SyriaTel Customer Churn](link) dataset from Kaggle.
-- The target variable in this dataset that we aimed to predict was identified as the churn column.
-- The data is divided into train, test, and validation datasets. Each row of the train dataset represents a customer and each column represents a feature.
-- The data set contains 3333 rows and 21 columns with both categorical and numerical features
-
-#### Data preparation
-
-- Categorical features are encoded as dummy variables
-- The churn column being the target(y)was compared to other features to determine their correlation.
-- Data preprocessing was done to normalize the data and to split the data into train, test, and validation datasets
-- After inspecting and analysis,the data was viable for modeling.
-
-#### Data Modeling
+####  Modeling
 
 The data seemed to be imbalance and SMOTE before scaling
 
